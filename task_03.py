@@ -38,7 +38,6 @@ class Cell:
         return self.cells_amount // other.cells_amount
 
     def make_order(self, cells_in_line):
-
         lines = self.cells_amount // cells_in_line
         for line in range(lines):
             print(cells_in_line * '*')
