@@ -9,7 +9,7 @@ class Cell:
         if self.cells_amount > other.cells_amount:
             return self.cells_amount - other.cells_amount
         else:
-            return 'Результат деления меньше нуля'
+            return 'Результат вычитания меньше нуля'
 
     def __mul__(self, other):
         return self.cells_amount * other.cells_amount
