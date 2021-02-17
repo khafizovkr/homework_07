@@ -1,3 +1,4 @@
+
 class Cell:
     def __init__(self, cells_amount):
         self.cells_amount = cells_amount
