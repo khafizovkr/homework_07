@@ -12,10 +12,15 @@ class Cell:
             return 'Результат вычитания меньше нуля'
 
     def __mul__(self, other):
-        return self.cells_amount * other.cells_amount
+        new_cell = self.cells_amount * other.cells_amount
+        return Cell(new_cell)
 
     def __truediv__(self, other):
-        return self.cells_amount // other.cells_amount
+        new_cell = self.cells_amount // other.cells_amount
+        return Cell(new_cell)
+
+    def __str__(self):
+        return self.cells_amount * '*'
 
     def make_order(self, cells_in_line):
         lines = self.cells_amount // cells_in_line
